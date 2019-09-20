@@ -1,4 +1,4 @@
-package com.example.chelesme;
+package com.example.chelesme.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.chelesme.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -34,7 +36,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent a = new Intent(SplashScreenActivity.this, MainActivity.class);
+                Intent a = new Intent(SplashScreenActivity.this, LanguageActivity.class);
                 startActivity(a);
                 finish();
             }

@@ -8,10 +8,40 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="PopupTheme" parent="Theme.AppCompat.Light">
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:textColor">@color/colorItem</item>
+    </style>
+
+
     <style name="AppTheme.FullScreen">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
+
+    <style name="ProgressBarThemeHappy_face"
+        parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/colorProgressBar_happy_face</item>
+    </style>
+
+    <style name="ProgressBarThemeIndifferent_face"
+        parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/colorProgressBar_indifferent_face</item>
+    </style>
+
+    <style name="ProgressBarThemeAngry_face"
+        parent="Widget.AppCompat.ProgressBar">
+        <item name="colorAccent">@color/colorProgressBar_angry_face</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

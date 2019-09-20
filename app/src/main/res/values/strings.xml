@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Chelesme</string>
+    <string name="title_activity_list_lan">ListLan</string>
+
+    <!-- language dashboard -->
+    <string name="persion">فارسی</string>
+    <string name="english">English</string>
+    <string name="Arabic">عربی</string>
+    <string name="deutschland">Deutschland</string>
+    <string name="fran_aise">Française</string>
+    <string name="Chinees">中国</string>
+
+
 </resources>

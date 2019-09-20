@@ -3,4 +3,28 @@
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+
+
+    <color name="bac">#90CAF9</color>
+
+
+    <!-- Color For Pop-up menu -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorItem">#000000</color>
+
+
+    <color name="colorTabTitle">#FFFFFF</color>
+    <color name="colorTabSelectedText">#2D8654</color>
+
+
+    <color name="colorProgressBar_happy_face">#3CA70A</color>
+    <color name="colorProgressBar_indifferent_face">#FFCC02</color>
+    <color name="colorProgressBar_angry_face">#E50909</color>
+
 </resources>
