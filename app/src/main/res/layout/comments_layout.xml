@@ -1,159 +1,547 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-        <!-- Face emotion -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/LL_FaceEmotion"
             android:orientation="vertical">
 
+            <!-- Face emotion -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/happy_face" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/timesbd_0"
-                    android:text="Happy"
-                    android:layout_marginLeft="15dp"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="18sp"
-                    android:layout_gravity="center_vertical"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/happy_face" />
 
-                <ProgressBar
-                    android:id="@+id/LinearProgressBar_happy_face"
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    app:theme="@style/ProgressBarThemeHappy_face"
-                    android:layout_width="170dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:indeterminate="false" />
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/timesbd_0"
+                        android:text="Happy"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"/>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="45%"
-                    android:fontFamily="@font/timesbd_0"
-                    android:layout_marginLeft="15dp"/>
+                    <ProgressBar
+                        android:id="@+id/LinearProgressBar_happy_face"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        app:theme="@style/ProgressBarThemeHappy_face"
+                        android:layout_width="170dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:indeterminate="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="45%"
+                        android:fontFamily="@font/timesbd_0"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/indifferent_face" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/timesbd_0"
+                        android:text="Indifferent"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <ProgressBar
+                        android:id="@+id/LinearProgressBar_indifferent_face"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        app:theme="@style/ProgressBarThemeIndifferent_face"
+                        android:layout_width="170dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:indeterminate="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="35%"
+                        android:fontFamily="@font/timesbd_0"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/angry_face" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/timesbd_0"
+                        android:text="Angry"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"/>
+
+                    <ProgressBar
+                        android:id="@+id/LinearProgressBar_angry_face"
+                        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                        app:theme="@style/ProgressBarThemeAngry_face"
+                        android:layout_width="170dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:indeterminate="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="20%"
+                        android:fontFamily="@font/timesbd_0"
+                        android:layout_marginLeft="15dp"/>
+
+                </LinearLayout>
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
-
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/indifferent_face" />
-
-                <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/timesbd_0"
-                    android:text="Indifferent"
-                    android:layout_marginLeft="15dp"
-                    android:textColor="@color/colorBlack"
-                    android:textSize="18sp"
-                    android:layout_gravity="center_vertical"/>
-
-                <ProgressBar
-                    android:id="@+id/LinearProgressBar_indifferent_face"
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    app:theme="@style/ProgressBarThemeIndifferent_face"
-                    android:layout_width="170dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:indeterminate="false" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="35%"
-                    android:fontFamily="@font/timesbd_0"
-                    android:layout_marginLeft="15dp"/>
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:orientation="horizontal"
-                android:gravity="center_vertical">
+                android:layout_height="180dp"
+                android:orientation="vertical">
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center_vertical"
-                    android:layout_marginLeft="15dp"
-                    android:src="@drawable/angry_face" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/happy_face"
+                        android:layout_marginLeft="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mohammad Hossein"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feb 2, 2011"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
                 <TextView
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/timesbd_0"
-                    android:text="Angry"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
                     android:layout_marginLeft="15dp"
-                    android:textColor="@color/colorBlack"
+                    android:layout_marginRight="15dp"
+                    android:text="Written for students, scholars, and professors in literature and creative writing, Reading and Writing Experimental Texts provides examples for doing literary scholarship in innovative ways."
                     android:textSize="18sp"
-                    android:layout_gravity="center_vertical"/>
-
-                <ProgressBar
-                    android:id="@+id/LinearProgressBar_angry_face"
-                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                    app:theme="@style/ProgressBarThemeAngry_face"
-                    android:layout_width="170dp"
-                    android:layout_marginLeft="15dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:indeterminate="false" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:text="20%"
                     android:fontFamily="@font/timesbd_0"
-                    android:layout_marginLeft="15dp"/>
+                    android:textColor="@color/colorBlack"/>
+
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/angry_face"
+                        android:layout_marginLeft="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ahmad Akbari"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feb 2, 2011"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Written for students, scholars, and professors in literature and creative writing, Reading and Writing Experimental Texts provides examples for doing literary scholarship in innovative ways."
+                    android:textSize="18sp"
+                    android:fontFamily="@font/timesbd_0"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/indifferent_face"
+                        android:layout_marginLeft="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Reza"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feb 2, 2011"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Written for students, scholars, and professors in literature and creative writing, Reading and Writing Experimental Texts provides examples for doing literary scholarship in innovative ways."
+                    android:textSize="18sp"
+                    android:fontFamily="@font/timesbd_0"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/indifferent_face"
+                        android:layout_marginLeft="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mohammad Hossein"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feb 2, 2011"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Written for students, scholars, and professors in literature and creative writing, Reading and Writing Experimental Texts provides examples for doing literary scholarship in innovative ways."
+                    android:textSize="18sp"
+                    android:fontFamily="@font/timesbd_0"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/happy_face"
+                        android:layout_marginLeft="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mohammad Hossein"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feb 2, 2011"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Written for students, scholars, and professors in literature and creative writing, Reading and Writing Experimental Texts provides examples for doing literary scholarship in innovative ways."
+                    android:textSize="18sp"
+                    android:fontFamily="@font/timesbd_0"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/happy_face"
+                        android:layout_marginLeft="15dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mohammad Hossein"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Feb 2, 2011"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/timesbd_0"
+                            android:textColor="@color/colorBlack"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:text="Written for students, scholars, and professors in literature and creative writing, Reading and Writing Experimental Texts provides examples for doing literary scholarship in innovative ways."
+                    android:textSize="18sp"
+                    android:fontFamily="@font/timesbd_0"
+                    android:textColor="@color/colorBlack"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"/>
+
+
 
         </LinearLayout>
 
 
-        
-
     </ScrollView>
-
-
 
 
 </RelativeLayout>

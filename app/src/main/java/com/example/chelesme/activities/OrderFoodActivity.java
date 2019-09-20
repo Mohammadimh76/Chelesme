@@ -2,11 +2,13 @@ package com.example.chelesme.activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+import androidx.appcompat.widget.*;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.example.chelesme.R;
@@ -14,6 +16,9 @@ import com.example.chelesme.R;
 public class OrderFoodActivity extends AppCompatActivity {
 
     Toolbar toolbar;
+    AppCompatButton buttonPaymentServices,buttonStay,
+            buttoneHealthCenters,buttonTransportation,
+            buttoneHealthCenters0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +27,15 @@ public class OrderFoodActivity extends AppCompatActivity {
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        buttonPaymentServices = findViewById(R.id.buttonPaymentServices);
+        buttonPaymentServices.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(OrderFoodActivity.this, RestaurantOrderFood.class));
+                finish();
+            }
+        });
 
     }
 

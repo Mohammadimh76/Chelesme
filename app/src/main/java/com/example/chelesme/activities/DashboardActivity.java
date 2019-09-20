@@ -73,7 +73,7 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                Toast.makeText(DashboardActivity.this, "Finance Click", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(DashboardActivity.this, DetailsFood.class));
+                startActivity(new Intent(DashboardActivity.this, OrderFoodActivity.class));
                 finish();
             }
         });

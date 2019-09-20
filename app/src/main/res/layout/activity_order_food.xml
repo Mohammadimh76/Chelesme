@@ -114,7 +114,7 @@
                                             android:layout_marginTop="10dp"
                                             android:layout_marginBottom="10dp"/>
 
-                                        <Button
+                                        <androidx.appcompat.widget.AppCompatButton
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:id="@+id/buttonStay"
@@ -156,7 +156,7 @@
                                             android:layout_marginTop="10dp"
                                             android:layout_marginBottom="10dp"/>
 
-                                        <Button
+                                        <androidx.appcompat.widget.AppCompatButton
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:id="@+id/buttonPaymentServices"
@@ -207,7 +207,7 @@
                                             android:layout_marginTop="10dp"
                                             android:layout_marginBottom="10dp"/>
 
-                                        <Button
+                                        <androidx.appcompat.widget.AppCompatButton
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:id="@+id/buttonTransportation"
@@ -250,7 +250,7 @@
                                             android:layout_marginTop="10dp"
                                             android:layout_marginBottom="10dp"/>
 
-                                        <Button
+                                        <androidx.appcompat.widget.AppCompatButton
                                             android:layout_width="match_parent"
                                             android:layout_height="match_parent"
                                             android:id="@+id/buttoneHealthCenters"
@@ -301,7 +301,7 @@
                                         android:layout_marginTop="10dp"
                                         android:layout_marginBottom="10dp"/>
 
-                                    <Button
+                                    <androidx.appcompat.widget.AppCompatButton
                                         android:layout_width="match_parent"
                                         android:layout_height="match_parent"
                                         android:id="@+id/buttoneHealthCenters0"

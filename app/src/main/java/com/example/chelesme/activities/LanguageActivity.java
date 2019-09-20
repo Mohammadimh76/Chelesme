@@ -19,7 +19,7 @@ public class LanguageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lan);
+        setContentView(R.layout.activity_language);
 
         cardView_English = findViewById(R.id.cardView_English);
         cardViewPersion = findViewById(R.id.cardViewPersion);
